@@ -1,7 +1,5 @@
 package cursoJava.aula36.ex1;
-
-
-
+//teste github
 public class TesteAula36 {
 
 	public static void main(String[] args) {

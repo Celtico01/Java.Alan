@@ -24,16 +24,16 @@ public class ContaBancaria {
 		this.saldo = saldo;
 	}
 	
-	protected double realizarSaque(double valorDoSaque, ContaBancaria conta) {
-		if(conta.saldo >= valorDoSaque) {
-			return conta.saldo - valorDoSaque;
+	protected double realizarSaque(double valorDoSaque) {
+		if(saldo >= valorDoSaque) {
+			return saldo - valorDoSaque;
 		}
 		else {
 			System.out.println("Valor de saque invalido!");
-			return conta.saldo;
+			return saldo;
 		}
 	}
-	protected double realizarDeposito(double valorDoDeposito, ContaBancaria conta) {
-		return conta.saldo += valorDoDeposito;
+	protected double realizarDeposito(double valorDoDeposito) {
+		return saldo += valorDoDeposito;
 	}
 }

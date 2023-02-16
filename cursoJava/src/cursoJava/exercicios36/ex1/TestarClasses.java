@@ -50,13 +50,13 @@ public class TestarClasses {
 			switch(escolha) {
 			case 1:
 				System.out.print("Valor do Saque: ");
-				usuario1.setSaldo(usuario1.realizarSaque(scan.nextDouble(), usuario1));
-				System.out.println("Novo Saldo: " + usuario1.getSaldo());
+				usuario1.setSaldo(usuario1.realizarSaque(scan.nextDouble()));
+				System.out.println("Saldo atual: " + usuario1.getSaldo());
 				break;
 			case 2:
 				System.out.print("Valor do Deposito: ");
-				usuario1.setSaldo(usuario1.realizarDeposito(scan.nextDouble(), usuario1));
-				System.out.println("Novo Saldo: " + usuario1.getSaldo());
+				usuario1.setSaldo(usuario1.realizarDeposito(scan.nextDouble()));
+				System.out.println("Saldo atual: " + usuario1.getSaldo());
 				break;
 			case 3:
 				exibirUsuario(TIPO_CONTA_POUPANCA, usuario1, null);

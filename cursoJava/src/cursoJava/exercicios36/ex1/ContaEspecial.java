@@ -12,17 +12,17 @@ public final class ContaEspecial extends ContaBancaria {
 		this.limite = limite;
 	}
 	
-	public double realizarSaque(double valorDoSaque, ContaBancaria conta) {
-		if(conta.getSaldo() >= valorDoSaque) {
-			return conta.getSaldo() - valorDoSaque;
+	public double realizarSaque(double valorDoSaque) {
+		if(getSaldo() >= valorDoSaque) {
+			return getSaldo() - valorDoSaque;
 		}
-		else if((conta.getSaldo() + limite) >= valorDoSaque){
-			limite = limite - (valorDoSaque - conta.getSaldo());
+		else if((getSaldo() + limite) >= valorDoSaque){
+			limite = limite - (valorDoSaque - getSaldo());
 			return 0;
 		}
 		else {
 			System.out.println("Valor de saque invalido!");
-			return conta.getSaldo();
+			return getSaldo();
 		}
 	}
 	

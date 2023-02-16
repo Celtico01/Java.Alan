@@ -11,8 +11,8 @@ public final class ContaPoupanca extends ContaBancaria {
 		this.diaRendimento = diaRendimento;
 	}
 	
-	public double calcularNovoSaldo(double taxaRendimento, ContaPoupanca conta) {
-		return conta.getSaldo() + (taxaRendimento / 100) * conta.getSaldo(); 
+	public double calcularNovoSaldo(double taxaRendimento) {
+		return getSaldo() + (taxaRendimento / 100) * getSaldo(); 
 	}
 
 }

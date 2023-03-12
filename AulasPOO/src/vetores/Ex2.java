@@ -40,4 +40,5 @@ public class Ex2 {
 
 		System.out.printf("\nSoma = %d\n", soma);
 	}
+	
  }
